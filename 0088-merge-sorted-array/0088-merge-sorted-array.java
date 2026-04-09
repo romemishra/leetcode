@@ -1,8 +1,8 @@
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
-        int i = m - 1; // last element in nums1
-        int j = n - 1; // last element in nums2
-        int k = m + n - 1; // last position in nums1
+        int i = m - 1; 
+        int j = n - 1; 
+        int k = m + n - 1; 
 
         // Merge from back
         while (i >= 0 && j >= 0) {
