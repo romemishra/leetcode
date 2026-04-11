@@ -8,11 +8,13 @@
 | [0001-two-sum](https://github.com/romemishra/leetcode/tree/master/0001-two-sum) |
 | [0088-merge-sorted-array](https://github.com/romemishra/leetcode/tree/master/0088-merge-sorted-array) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/romemishra/leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
+| [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/romemishra/leetcode/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
 ## Hash Table
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/romemishra/leetcode/tree/master/0001-two-sum) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/romemishra/leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
+| [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/romemishra/leetcode/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
 ## Two Pointers
 |  |
 | ------- |
