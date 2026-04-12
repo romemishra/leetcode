@@ -27,4 +27,12 @@
 |  |
 | ------- |
 | [0009-palindrome-number](https://github.com/romemishra/leetcode/tree/master/0009-palindrome-number) |
+## String
+|  |
+| ------- |
+| [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/romemishra/leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
+## Dynamic Programming
+|  |
+| ------- |
+| [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/romemishra/leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 <!---LeetCode Topics End-->
