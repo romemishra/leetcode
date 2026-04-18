@@ -30,6 +30,7 @@
 |  |
 | ------- |
 | [0009-palindrome-number](https://github.com/romemishra/leetcode/tree/master/0009-palindrome-number) |
+| [3783-mirror-distance-of-an-integer](https://github.com/romemishra/leetcode/tree/master/3783-mirror-distance-of-an-integer) |
 ## String
 |  |
 | ------- |
