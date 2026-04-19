@@ -8,6 +8,7 @@
 | [0001-two-sum](https://github.com/romemishra/leetcode/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/romemishra/leetcode/tree/master/0004-median-of-two-sorted-arrays) |
 | [0088-merge-sorted-array](https://github.com/romemishra/leetcode/tree/master/0088-merge-sorted-array) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/romemishra/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2011-final-value-of-variable-after-performing-operations](https://github.com/romemishra/leetcode/tree/master/2011-final-value-of-variable-after-performing-operations) |
 | [3488-closest-equal-element-queries](https://github.com/romemishra/leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/romemishra/leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
@@ -25,6 +26,7 @@
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/romemishra/leetcode/tree/master/0088-merge-sorted-array) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/romemishra/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 ## Sorting
 |  |
 | ------- |
@@ -48,6 +50,7 @@
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/romemishra/leetcode/tree/master/0004-median-of-two-sorted-arrays) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/romemishra/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [3488-closest-equal-element-queries](https://github.com/romemishra/leetcode/tree/master/3488-closest-equal-element-queries) |
 ## Divide and Conquer
 |  |
