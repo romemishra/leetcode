@@ -35,6 +35,7 @@
 ## Math
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/romemishra/leetcode/tree/master/0002-add-two-numbers) |
 | [0009-palindrome-number](https://github.com/romemishra/leetcode/tree/master/0009-palindrome-number) |
 | [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/romemishra/leetcode/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
 | [3783-mirror-distance-of-an-integer](https://github.com/romemishra/leetcode/tree/master/3783-mirror-distance-of-an-integer) |
@@ -65,4 +66,12 @@
 |  |
 | ------- |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/romemishra/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
+## Linked List
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/romemishra/leetcode/tree/master/0002-add-two-numbers) |
+## Recursion
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/romemishra/leetcode/tree/master/0002-add-two-numbers) |
 <!---LeetCode Topics End-->
