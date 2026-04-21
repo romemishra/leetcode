@@ -1,69 +1,62 @@
-class Solution {
-    public int minimumHammingDistance(int[] source, int[] target, int[][] allowedSwaps) {
-         int n = source.length;
-        
-        UnionFind uf = new UnionFind(n);
-        
-        // Step 1: Union operations
-        for (int[] swap : allowedSwaps) {
-            uf.union(swap[0], swap[1]);
-        }
-        
-        // Step 2: Group indices by root
-        Map<Integer, List<Integer>> groups = new HashMap<>();
-        
-        for (int i = 0; i < n; i++) {
-            int root = uf.find(i);
-            groups.computeIfAbsent(root, k -> new ArrayList<>()).add(i);
-        }
-        
-        int hammingDistance = 0;
-        
-        // Step 3: Process each component
-        for (List<Integer> group : groups.values()) {
-            Map<Integer, Integer> freq = new HashMap<>();
-            
-            // Count source frequencies
-            for (int idx : group) {
-                freq.put(source[idx], freq.getOrDefault(source[idx], 0) + 1);
-            }
-            
-            // Match with target
-            for (int idx : group) {
-                if (freq.getOrDefault(target[idx], 0) > 0) {
-                    freq.put(target[idx], freq.get(target[idx]) - 1);
-                } else {
-                    hammingDistance++;
-                }
-            }
-        }
-        
-        return hammingDistance;
+class UnionFind {
+  public UnionFind(int n) {
+    id = new int[n];
+    rank = new int[n];
+    for (int i = 0; i < n; ++i)
+      id[i] = i;
+  }
+
+  public void unionByRank(int u, int v) {
+    final int i = find(u);
+    final int j = find(v);
+    if (i == j)
+      return;
+    if (rank[i] < rank[j]) {
+      id[i] = j;
+    } else if (rank[i] > rank[j]) {
+      id[j] = i;
+    } else {
+      id[i] = j;
+      ++rank[j];
     }
+  }
+
+  public int find(int u) {
+    return id[u] == u ? u : (id[u] = find(id[u]));
+  }
+
+  private int[] id;
+  private int[] rank;
 }
 
-// DSU (Union-Find)
-class UnionFind {
-    int[] parent;
-    
-    public UnionFind(int n) {
-        parent = new int[n];
-        for (int i = 0; i < n; i++) parent[i] = i;
+class Solution {
+  public int minimumHammingDistance(int[] source, int[] target, int[][] allowedSwaps) {
+    final int n = source.length;
+    int ans = 0;
+    UnionFind uf = new UnionFind(n);
+    Map<Integer, Integer>[] groupIdToCount = new Map[n];
+
+    for (int i = 0; i < n; ++i)
+      groupIdToCount[i] = new HashMap<>();
+
+    for (int[] allowedSwap : allowedSwaps) {
+      final int a = allowedSwap[0];
+      final int b = allowedSwap[1];
+      uf.unionByRank(a, b);
     }
-    
-    public int find(int x) {
-        if (parent[x] != x) {
-            parent[x] = find(parent[x]); // path compression
-        }
-        return parent[x];
+
+    for (int i = 0; i < n; ++i)
+      groupIdToCount[uf.find(i)].merge(source[i], 1, Integer::sum);
+
+    for (int i = 0; i < n; ++i) {
+      final int groupId = uf.find(i);
+      Map<Integer, Integer> count = groupIdToCount[groupId];
+      if (!count.containsKey(target[i]))
+        ++ans;
+      else if (count.merge(target[i], -1, Integer::sum) == 0)
+        count.remove(target[i]);
     }
-    
-    public void union(int a, int b) {
-        int rootA = find(a);
-        int rootB = find(b);
-        
-        if (rootA != rootB) {
-            parent[rootA] = rootB;
-        }
-    }
+
+    return ans;
+  }
 }
