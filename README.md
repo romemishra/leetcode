@@ -12,6 +12,7 @@
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/romemishra/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2011-final-value-of-variable-after-performing-operations](https://github.com/romemishra/leetcode/tree/master/2011-final-value-of-variable-after-performing-operations) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/romemishra/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
+| [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/romemishra/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3488-closest-equal-element-queries](https://github.com/romemishra/leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/romemishra/leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/romemishra/leetcode/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
@@ -21,6 +22,7 @@
 | ------- |
 | [0001-two-sum](https://github.com/romemishra/leetcode/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/romemishra/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/romemishra/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3488-closest-equal-element-queries](https://github.com/romemishra/leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/romemishra/leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/romemishra/leetcode/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
@@ -97,4 +99,8 @@
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/romemishra/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
+## Prefix Sum
+|  |
+| ------- |
+| [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/romemishra/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 <!---LeetCode Topics End-->
