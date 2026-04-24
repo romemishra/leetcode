@@ -20,6 +20,7 @@
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/romemishra/leetcode/tree/master/0001-two-sum) |
+| [0003-longest-substring-without-repeating-characters](https://github.com/romemishra/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [3488-closest-equal-element-queries](https://github.com/romemishra/leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/romemishra/leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/romemishra/leetcode/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
@@ -43,6 +44,7 @@
 ## String
 |  |
 | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/romemishra/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/romemishra/leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 | [2011-final-value-of-variable-after-performing-operations](https://github.com/romemishra/leetcode/tree/master/2011-final-value-of-variable-after-performing-operations) |
 | [2833-furthest-point-from-origin](https://github.com/romemishra/leetcode/tree/master/2833-furthest-point-from-origin) |
@@ -88,4 +90,8 @@
 |  |
 | ------- |
 | [2833-furthest-point-from-origin](https://github.com/romemishra/leetcode/tree/master/2833-furthest-point-from-origin) |
+## Sliding Window
+|  |
+| ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/romemishra/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 <!---LeetCode Topics End-->
