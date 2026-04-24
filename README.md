@@ -28,6 +28,7 @@
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/romemishra/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0088-merge-sorted-array](https://github.com/romemishra/leetcode/tree/master/0088-merge-sorted-array) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/romemishra/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 ## Sorting
@@ -45,12 +46,14 @@
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/romemishra/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0005-longest-palindromic-substring](https://github.com/romemishra/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/romemishra/leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 | [2011-final-value-of-variable-after-performing-operations](https://github.com/romemishra/leetcode/tree/master/2011-final-value-of-variable-after-performing-operations) |
 | [2833-furthest-point-from-origin](https://github.com/romemishra/leetcode/tree/master/2833-furthest-point-from-origin) |
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/romemishra/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/romemishra/leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 ## Binary Search
 |  |
