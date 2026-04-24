@@ -1,30 +1,46 @@
 class Solution {
-    public String longestPalindrome(String s) {
-        if (s == null || s.length() < 1) return "";
+    public String longestPalindrome(String s)
+    {
+        // Brute force
 
-        int start = 0, end = 0;
-
-        for (int i = 0; i < s.length(); i++) {
-            int len1 = expand(s, i, i);       // odd length
-            int len2 = expand(s, i, i + 1);   // even length
-
-            int len = Math.max(len1, len2);
-
-            if (len > end - start) {
-                start = i - (len - 1) / 2;
-                end = i + len / 2;
+        int ans = 0;
+        int l = 0, r = 0;
+        int n = s.length();
+        for (int i=0; i<n; i++)
+        {
+            int currL, currR, currAns;
+            currL = i-1;
+            currR = i+1;
+            while (currL >=0 && currR < n && s.charAt(currL) == s.charAt(currR))
+            {
+                currL--;
+                currR++;
+            }
+            currAns = currR - currL - 1;
+            if (ans < currAns)
+            {
+                ans = currAns;
+                l = currL + 1;
+                r = currR - 1;
+                System.out.println("l = " + l + ", r = " + r + ", ans = " + ans);
+            }
+            
+            currL = i;
+            currR = i+1;
+            while (currL >=0 && currR < n && s.charAt(currL) == s.charAt(currR))
+            {
+                currL--;
+                currR++;
+            }
+            currAns = currR - currL - 1;
+            if (ans < currAns)
+            {
+                ans = currAns;
+                l = currL + 1;
+                r = currR - 1;
+                System.out.println("l = " + l + ", r = " + r + ", ans = " + ans);
             }
         }
-
-        return s.substring(start, end + 1);
-    }
-
-    private int expand(String s, int left, int right) {
-        while (left >= 0 && right < s.length() &&
-               s.charAt(left) == s.charAt(right)) {
-            left--;
-            right++;
-        }
-        return right - left - 1;
+        return s.substring(l, r+1);
     }
 }
