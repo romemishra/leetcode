@@ -1,46 +1,25 @@
 class Solution {
-    public String longestPalindrome(String s)
-    {
-        // Brute force
-
-        int ans = 0;
-        int l = 0, r = 0;
-        int n = s.length();
-        for (int i=0; i<n; i++)
-        {
-            int currL, currR, currAns;
-            currL = i-1;
-            currR = i+1;
-            while (currL >=0 && currR < n && s.charAt(currL) == s.charAt(currR))
-            {
-                currL--;
-                currR++;
-            }
-            currAns = currR - currL - 1;
-            if (ans < currAns)
-            {
-                ans = currAns;
-                l = currL + 1;
-                r = currR - 1;
-                System.out.println("l = " + l + ", r = " + r + ", ans = " + ans);
-            }
-            
-            currL = i;
-            currR = i+1;
-            while (currL >=0 && currR < n && s.charAt(currL) == s.charAt(currR))
-            {
-                currL--;
-                currR++;
-            }
-            currAns = currR - currL - 1;
-            if (ans < currAns)
-            {
-                ans = currAns;
-                l = currL + 1;
-                r = currR - 1;
-                System.out.println("l = " + l + ", r = " + r + ", ans = " + ans);
-            }
+    int startInd = 0, endInd = 0;
+    public String longestPalindrome(String s) {
+        char[] charArray = s.toCharArray();
+        backtrack(charArray,0);
+        return s.substring(startInd,endInd+1);
+    }
+    public void backtrack(char[] charArray, int i){
+        if(i> charArray.length-1) return;
+        int l= i, r=i;
+        //ssss
+        while(r< charArray.length-1 && charArray[r] == charArray[r+1]) r++;
+        i = r;
+        while(l>0 && r< charArray.length-1 && charArray[l-1] == charArray[r+1]){
+            l--;
+            r++;
         }
-        return s.substring(l, r+1);
+        if(r-l>endInd - startInd){
+            startInd = l;
+            endInd = r;
+        }
+
+        backtrack(charArray, ++i);
     }
 }
