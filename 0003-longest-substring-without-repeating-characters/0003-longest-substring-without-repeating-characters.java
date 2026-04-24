@@ -1,43 +1,20 @@
 class Solution {
-    //     public int lengthOfLongestSubstring(String s) {
-    //     int maxlen = 0;
-    //     HashMap<Character, Integer> h = new HashMap<>();
-        
-    //     int left = 0;
+    public int lengthOfLongestSubstring(String s) {
+        if (s == null || s.length() == 0) return 0;
 
-    //     for (int i = 0; i < s.length(); i++) {
-    //         char ch = s.charAt(i);
-    //         while (h.containsKey(ch)) {
-    //             h.remove(s.charAt(left));
-    //             left++;
-            
-    //         h.put(ch, 1);
-
-    //         maxlen = Math.max(maxlen, h.size());
-    //     }
-
-    //     return maxlen;
-    // }
-        public int lengthOfLongestSubstring(String s) {
-        HashMap<Character, Integer> map = new HashMap<>();
-        int maxLen = 0;
-        int left = 0;
-
-        for (int right = 0; right < s.length(); right++) {
-            char ch = s.charAt(right);
-
-            // If duplicate found, move left pointer
-            if (map.containsKey(ch)) {
-                left = Math.max(left, map.get(ch) + 1);
+        int low = 0;
+        int result = 0;
+        boolean[] visited = new boolean[256];
+        for (int high = 0; high < s.length(); high++) {
+            char c = s.charAt(high);
+            while (visited[c]) {
+                char l = s.charAt(low);
+                visited[l] = false;
+                low++;
             }
-
-            // Store latest index of character
-            map.put(ch, right);
-
-            // Update max length
-            maxLen = Math.max(maxLen, right - left + 1);
+            visited[c] = true;
+            result = Math.max(result, high - low + 1);
         }
-
-        return maxLen;
+        return result;
     }
 }
