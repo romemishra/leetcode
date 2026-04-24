@@ -45,6 +45,7 @@
 | ------- |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/romemishra/leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 | [2011-final-value-of-variable-after-performing-operations](https://github.com/romemishra/leetcode/tree/master/2011-final-value-of-variable-after-performing-operations) |
+| [2833-furthest-point-from-origin](https://github.com/romemishra/leetcode/tree/master/2833-furthest-point-from-origin) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -83,4 +84,8 @@
 |  |
 | ------- |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/romemishra/leetcode/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
+## Counting
+|  |
+| ------- |
+| [2833-furthest-point-from-origin](https://github.com/romemishra/leetcode/tree/master/2833-furthest-point-from-origin) |
 <!---LeetCode Topics End-->
