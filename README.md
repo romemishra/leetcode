@@ -13,6 +13,7 @@
 | [2011-final-value-of-variable-after-performing-operations](https://github.com/romemishra/leetcode/tree/master/2011-final-value-of-variable-after-performing-operations) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/romemishra/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/romemishra/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
+| [3464-maximize-the-distance-between-points-on-a-square](https://github.com/romemishra/leetcode/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 | [3488-closest-equal-element-queries](https://github.com/romemishra/leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/romemishra/leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/romemishra/leetcode/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
@@ -37,11 +38,13 @@
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/romemishra/leetcode/tree/master/0088-merge-sorted-array) |
+| [3464-maximize-the-distance-between-points-on-a-square](https://github.com/romemishra/leetcode/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 ## Math
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/romemishra/leetcode/tree/master/0002-add-two-numbers) |
 | [0009-palindrome-number](https://github.com/romemishra/leetcode/tree/master/0009-palindrome-number) |
+| [3464-maximize-the-distance-between-points-on-a-square](https://github.com/romemishra/leetcode/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 | [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/romemishra/leetcode/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
 | [3783-mirror-distance-of-an-integer](https://github.com/romemishra/leetcode/tree/master/3783-mirror-distance-of-an-integer) |
 ## String
@@ -62,6 +65,7 @@
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/romemishra/leetcode/tree/master/0004-median-of-two-sorted-arrays) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/romemishra/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
+| [3464-maximize-the-distance-between-points-on-a-square](https://github.com/romemishra/leetcode/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 | [3488-closest-equal-element-queries](https://github.com/romemishra/leetcode/tree/master/3488-closest-equal-element-queries) |
 ## Divide and Conquer
 |  |
@@ -103,4 +107,8 @@
 |  |
 | ------- |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/romemishra/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
+## Geometry
+|  |
+| ------- |
+| [3464-maximize-the-distance-between-points-on-a-square](https://github.com/romemishra/leetcode/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 <!---LeetCode Topics End-->
