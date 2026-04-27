@@ -1,63 +1,40 @@
 class Solution {
-    
-    // incomingDir 0:left, 1: up, 2:right, 3: down
-    static int[][] DIRS = {{0,-1},{-1,0},{0,1},{1,0}};
-    int m, n;
-    int[][] grid;
-    boolean[][] visited;
-
-    static int[][] OUT = {
-        {0, 2}, 
-        {1, 3},
-        {0, 3},
-        {2, 3},
-        {0, 1},
-        {1, 2}
-    };
+    static int LEFT = 0b0001, RIGHT = 0b0010, TOP = 0b0100, BOTTOM = 0b1000;
+    static int[] directions = { 0, LEFT|RIGHT, TOP|BOTTOM, LEFT|BOTTOM, BOTTOM|RIGHT, LEFT|TOP, TOP|RIGHT };
 
     public boolean hasValidPath(int[][] grid) {
-        this.grid = grid;
-        m = grid.length;
-        n = grid[0].length;
-        visited = new boolean[m][n];
-
-        int incomingDir = 0;
-        return dfs(0, 0, incomingDir);
+        int outDirection = directions[grid[0][0]];
+        return check(grid, outDirection & BOTTOM) || check(grid, outDirection & RIGHT);
     }
-    
 
-    boolean dfs(int r, int c, int incomingDir) {
-        visited[r][c] = true;
-        if (r == m - 1 && c == n - 1) return true;
-
-        boolean canReach = false;
-
-        int street = grid[r][c];
-
-        for (int dirIdx : OUT[street - 1]) {
-            int[] dir = DIRS[dirIdx];
-            int nr = r + dir[0], nc = c + dir[1];
-            if (
-                nr >= 0 && nr < m && nc >= 0 && nc < n
-                && !visited[nr][nc] && accept(grid[nr][nc], dirIdx)
-            ) {
-                if (dfs(nr, nc, dirIdx)) {
-                    canReach = true;
-                }
+    boolean check(int[][] grid, int outDirection){
+        int m = grid.length, n = grid[0].length;
+        int x = 0, y = 0, inDirection = 0;
+        while(true){
+            if(x == m -1 && y == n -1) return true;
+            if(outDirection == LEFT){
+                y--;
+                inDirection = RIGHT;
+            }else if(outDirection == RIGHT){
+                y++;
+                inDirection = LEFT;
+            }else if(outDirection == TOP){
+                x--;
+                inDirection = BOTTOM;
+            }else if(outDirection == BOTTOM){
+                x++;
+                inDirection = TOP;
+            }else{
+                return false;
             }
+            
+            if(x == 0 && y == 0) return false;
+            if(x < 0 || x >= m || y < 0 || y >= n) return false;
+
+            int nextDirection = directions[grid[x][y]];
+            outDirection = nextDirection & (~inDirection);
+            if(outDirection == nextDirection)
+                return false;
         }
-
-        return canReach;
-    }
-
-
-    boolean accept(int street, int incomingDir) {
-        if (street == 1) return incomingDir == 0 || incomingDir == 2;
-        if (street == 2) return incomingDir == 1 || incomingDir == 3;
-        if (street == 3) return incomingDir == 2 || incomingDir == 1;
-        if (street == 4) return incomingDir == 0 || incomingDir == 1;
-        if (street == 5) return incomingDir == 2 || incomingDir == 3;
-        if (street == 6) return incomingDir == 0 || incomingDir == 3;
-        return false;
     }
 }
