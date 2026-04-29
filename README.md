@@ -14,6 +14,7 @@
 | [2011-final-value-of-variable-after-performing-operations](https://github.com/romemishra/leetcode/tree/master/2011-final-value-of-variable-after-performing-operations) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/romemishra/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/romemishra/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
+| [3225-maximum-score-from-grid-operations](https://github.com/romemishra/leetcode/tree/master/3225-maximum-score-from-grid-operations) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/romemishra/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/romemishra/leetcode/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 | [3488-closest-equal-element-queries](https://github.com/romemishra/leetcode/tree/master/3488-closest-equal-element-queries) |
@@ -64,6 +65,7 @@
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/romemishra/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/romemishra/leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
+| [3225-maximum-score-from-grid-operations](https://github.com/romemishra/leetcode/tree/master/3225-maximum-score-from-grid-operations) |
 ## Binary Search
 |  |
 | ------- |
@@ -112,6 +114,7 @@
 ## Prefix Sum
 |  |
 | ------- |
+| [3225-maximum-score-from-grid-operations](https://github.com/romemishra/leetcode/tree/master/3225-maximum-score-from-grid-operations) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/romemishra/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 ## Geometry
 |  |
@@ -126,4 +129,5 @@
 | ------- |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/romemishra/leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/romemishra/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
+| [3225-maximum-score-from-grid-operations](https://github.com/romemishra/leetcode/tree/master/3225-maximum-score-from-grid-operations) |
 <!---LeetCode Topics End-->
