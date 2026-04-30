@@ -1,67 +1,46 @@
 class Solution {
-    public int maxPathScore(int[][] grid, int k) {
+    public int maxPathScore(int[][] grid, int K) {
+        if (minPathSum(grid) > K) {
+            return -1;
+        }
+
         int m = grid.length;
         int n = grid[0].length;
+        K = Math.min(K, m + n - 2); // 至多花费 m+n-2
+        int[][] f = new int[n + 1][K + 2];
+        for (int[] row : f) {
+            Arrays.fill(row, Integer.MIN_VALUE);
+        }
+        f[1][1] = 0;
 
-        // dp[i][j][c] = max score reaching (i,j) with cost c
-        int[][][] dp = new int[m][n][k + 1];
-
-        // initialize with -1 (invalid state)
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                for (int c = 0; c <= k; c++) {
-                    dp[i][j][c] = -1;
+                int x = grid[i][j];
+                for (int k = Math.min(K, i + j); k >= 0; k--) { // 从 (0,0) 到 (i,j) 至多花费 i+j
+                    int newK = x > 0 ? k - 1 : k;
+                    f[j + 1][k + 1] = Math.max(f[j + 1][newK + 1], f[j][newK + 1]) + x;
                 }
             }
         }
 
-        // starting point
-        dp[0][0][0] = 0;
-
-        // cost mapping
-        int[] cost = {0, 1, 1};
-
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                for (int c = 0; c <= k; c++) {
-
-                    if (dp[i][j][c] == -1) continue;
-
-                    // move DOWN
-                    if (i + 1 < m) {
-                        int val = grid[i + 1][j];
-                        int newCost = c + cost[val];
-
-                        if (newCost <= k) {
-                            dp[i + 1][j][newCost] = Math.max(
-                                dp[i + 1][j][newCost],
-                                dp[i][j][c] + val
-                            );
-                        }
-                    }
-
-                    // move RIGHT
-                    if (j + 1 < n) {
-                        int val = grid[i][j + 1];
-                        int newCost = c + cost[val];
-
-                        if (newCost <= k) {
-                            dp[i][j + 1][newCost] = Math.max(
-                                dp[i][j + 1][newCost],
-                                dp[i][j][c] + val
-                            );
-                        }
-                    }
-                }
-            }
+        int ans = 0;
+        for (int x : f[n]) {
+            ans = Math.max(ans, x);
         }
-
-        // find best answer at destination
-        int ans = -1;
-        for (int c = 0; c <= k; c++) {
-            ans = Math.max(ans, dp[m - 1][n - 1][c]);
-        }
-
         return ans;
+    }
+
+    // 64. 最小路径和
+    private int minPathSum(int[][] grid) {
+        int n = grid[0].length;
+        int[] f = new int[n + 1];
+        Arrays.fill(f, Integer.MAX_VALUE);
+        f[1] = 0;
+        for (int[] row : grid) {
+            for (int j = 0; j < n; j++) {
+                f[j + 1] = Math.min(f[j], f[j + 1]) + Math.min(row[j], 1); // 值大于 0 的单元格花费 1
+            }
+        }
+        return f[n];
     }
 }
