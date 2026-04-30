@@ -1,46 +1,30 @@
 class Solution {
-    public int maxPathScore(int[][] grid, int K) {
-        if (minPathSum(grid) > K) {
-            return -1;
-        }
+    int[][][] dp;
 
+    public int maxPathScore(int[][] grid, int k) {
         int m = grid.length;
         int n = grid[0].length;
-        K = Math.min(K, m + n - 2); // 至多花费 m+n-2
-        int[][] f = new int[n + 1][K + 2];
-        for (int[] row : f) {
-            Arrays.fill(row, Integer.MIN_VALUE);
-        }
-        f[1][1] = 0;
-
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                int x = grid[i][j];
-                for (int k = Math.min(K, i + j); k >= 0; k--) { // 从 (0,0) 到 (i,j) 至多花费 i+j
-                    int newK = x > 0 ? k - 1 : k;
-                    f[j + 1][k + 1] = Math.max(f[j + 1][newK + 1], f[j][newK + 1]) + x;
-                }
-            }
-        }
-
-        int ans = 0;
-        for (int x : f[n]) {
-            ans = Math.max(ans, x);
-        }
-        return ans;
+        dp = new int[m][n][k + 1];
+        for (int i = 0; i < m; i++)
+            for (int j = 0; j < n; j++)
+                Arrays.fill(dp[i][j], -1);
+        return Math.max(score(grid, 0, 0, 0, k), -1);
     }
 
-    // 64. 最小路径和
-    private int minPathSum(int[][] grid) {
-        int n = grid[0].length;
-        int[] f = new int[n + 1];
-        Arrays.fill(f, Integer.MAX_VALUE);
-        f[1] = 0;
-        for (int[] row : grid) {
-            for (int j = 0; j < n; j++) {
-                f[j + 1] = Math.min(f[j], f[j + 1]) + Math.min(row[j], 1); // 值大于 0 的单元格花费 1
-            }
-        }
-        return f[n];
+    public int score(int[][] grid, int i, int j, int cost, int k) {
+        if (i >= grid.length || j >= grid[0].length)
+            return Integer.MIN_VALUE;
+        cost += (grid[i][j] == 0 ? 0 : 1);
+        if (cost > k)
+            return Integer.MIN_VALUE;
+        if (i == grid.length - 1 && j == grid[0].length - 1)
+            return grid[i][j];
+        if (dp[i][j][cost] != -1)
+            return dp[i][j][cost];
+        int r = grid[i][j] + score(grid, i + 1, j, cost, k);
+        int d = grid[i][j] + score(grid, i, j + 1, cost, k);
+
+        return dp[i][j][cost] = Math.max(r, d);
+
     }
 }
