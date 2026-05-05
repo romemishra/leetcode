@@ -36,6 +36,7 @@
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/romemishra/leetcode/tree/master/0005-longest-palindromic-substring) |
+| [0061-rotate-list](https://github.com/romemishra/leetcode/tree/master/0061-rotate-list) |
 | [0088-merge-sorted-array](https://github.com/romemishra/leetcode/tree/master/0088-merge-sorted-array) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/romemishra/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 ## Sorting
@@ -91,6 +92,7 @@
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/romemishra/leetcode/tree/master/0002-add-two-numbers) |
+| [0061-rotate-list](https://github.com/romemishra/leetcode/tree/master/0061-rotate-list) |
 ## Recursion
 |  |
 | ------- |
