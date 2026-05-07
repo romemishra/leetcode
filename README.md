@@ -19,6 +19,7 @@
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/romemishra/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/romemishra/leetcode/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 | [3488-closest-equal-element-queries](https://github.com/romemishra/leetcode/tree/master/3488-closest-equal-element-queries) |
+| [3660-jump-game-ix](https://github.com/romemishra/leetcode/tree/master/3660-jump-game-ix) |
 | [3740-minimum-distance-between-three-equal-elements-i](https://github.com/romemishra/leetcode/tree/master/3740-minimum-distance-between-three-equal-elements-i) |
 | [3741-minimum-distance-between-three-equal-elements-ii](https://github.com/romemishra/leetcode/tree/master/3741-minimum-distance-between-three-equal-elements-ii) |
 | [3742-maximum-path-score-in-a-grid](https://github.com/romemishra/leetcode/tree/master/3742-maximum-path-score-in-a-grid) |
@@ -70,6 +71,7 @@
 | [0005-longest-palindromic-substring](https://github.com/romemishra/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [1320-minimum-distance-to-type-a-word-using-two-fingers](https://github.com/romemishra/leetcode/tree/master/1320-minimum-distance-to-type-a-word-using-two-fingers) |
 | [3225-maximum-score-from-grid-operations](https://github.com/romemishra/leetcode/tree/master/3225-maximum-score-from-grid-operations) |
+| [3660-jump-game-ix](https://github.com/romemishra/leetcode/tree/master/3660-jump-game-ix) |
 | [3742-maximum-path-score-in-a-grid](https://github.com/romemishra/leetcode/tree/master/3742-maximum-path-score-in-a-grid) |
 ## Binary Search
 |  |
