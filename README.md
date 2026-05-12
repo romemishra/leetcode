@@ -9,6 +9,7 @@
 | [0004-median-of-two-sorted-arrays](https://github.com/romemishra/leetcode/tree/master/0004-median-of-two-sorted-arrays) |
 | [0088-merge-sorted-array](https://github.com/romemishra/leetcode/tree/master/0088-merge-sorted-array) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/romemishra/leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/romemishra/leetcode/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/romemishra/leetcode/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/romemishra/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1861-rotating-the-box](https://github.com/romemishra/leetcode/tree/master/1861-rotating-the-box) |
@@ -46,6 +47,7 @@
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/romemishra/leetcode/tree/master/0088-merge-sorted-array) |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/romemishra/leetcode/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/romemishra/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [3464-maximize-the-distance-between-points-on-a-square](https://github.com/romemishra/leetcode/tree/master/3464-maximize-the-distance-between-points-on-a-square) |
 ## Math
@@ -91,6 +93,7 @@
 ## Greedy
 |  |
 | ------- |
+| [1665-minimum-initial-energy-to-finish-tasks](https://github.com/romemishra/leetcode/tree/master/1665-minimum-initial-energy-to-finish-tasks) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/romemishra/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 ## Linked List
 |  |
