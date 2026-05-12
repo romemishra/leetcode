@@ -1,28 +1,19 @@
 class Solution {
     public int minimumEffort(int[][] tasks) {
+        Arrays.sort(tasks, (a, b) -> (b[1] - b[0]) - (a[1] - a[0]));
 
-        Arrays.sort(tasks, (a, b) -> {
-            return (b[1] - b[0]) - (a[1] - a[0]);
-        });
-
-        int answer = 0;
         int energy = 0;
+        int curr = 0;
 
         for (int[] task : tasks) {
-
-            int actual = task[0];
-            int minimum = task[1];
-
-            // Increase energy if current energy is insufficient
-            if (energy < minimum) {
-                answer += (minimum - energy);
-                energy = minimum;
+            if (curr < task[1]) {
+                energy += task[1] - curr;
+                curr = task[1];
             }
 
-            // Complete the task
-            energy -= actual;
+            curr -= task[0];
         }
 
-        return answer;
+        return energy;
     }
 }
